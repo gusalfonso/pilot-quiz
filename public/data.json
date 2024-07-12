@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "question": "¿Cuáles son los sistemas de control de vuelo primarios, esenciales para el control del avión?",
+    "answers": [
+      "Elevador, Alerón, Timón de Dirección",
+      "Elevador, Flaps, Aletas Compensadoras",
+      "Timón, Flaps, Elevador"
+    ],
+    "correct": "Elevador, Alerón, Timón de Dirección"
+  },
+  {
+    "id": 2,
+    "question": "¿Cuántas horas de vuelo como piloto al mando debe completar un Piloto Privado de Avión, a partir que obtuvo su licencia, para estar facultado para transportar pasajeros?",
+    "answers": ["15 Hs.", "20 Hs.", "25 Hs."],
+    "correct": "25 Hs."
+  },
+  {
+    "id": 3,
+    "question": "¿Pasados cuantos días sin actividad de vuelo, un Piloto Privado de Avión, debe ser readaptado por un Instructor?",
+    "answers": ["15", "30", "45"],
+    "correct": "30"
+  },
+  {
+    "id": 4,
+    "question": "El receptor VOR tiene la indicación que se muestra. ¿Cuál es la posición relativa del avión respecto a la estación transmisora?",
+    "answers": ["Norte", "Sur", "Este", "Oeste"],
+    "correct": "Sur"
+  },
+  {
+    "id": 5,
+    "question": "En el Ciclo OTTO la combustión se realiza a:",
+    "answers": [
+      "volumen constante.",
+      "presión constante.",
+      "temperatura constante."
+    ],
+    "correct": "volumen constante."
+  }
+]
