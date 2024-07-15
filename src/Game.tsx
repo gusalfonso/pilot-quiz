@@ -1,6 +1,8 @@
+import { IconBase } from "react-icons";
 import { useQuestionStore } from "./store/questions";
 import { Question as QuestionType } from "./types";
-import confetti from 'canvas-confetti'
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+
 
 const getBackgroundColor = (info: QuestionType, answer?:string) => {
   const { userSelectedAnswer, correct } = info;
@@ -52,6 +54,16 @@ export const Game = () => {
 
   return (
     <>
+    <nav className="navigation-bar">
+      <button onClick={goPreviousQuestion} disabled={currentQuestion === 0}>
+        <SlArrowLeft/>
+      </button>
+
+      <button onClick={goNextQuestion} disabled={currentQuestion === questions.length-1}>
+        <SlArrowRight/>
+      </button>
+    </nav>
+
       <Question info={questionInfo} />
     </>
   );
