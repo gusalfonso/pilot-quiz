@@ -60,16 +60,10 @@ ul {
     width: 100%;
     background: transparent;
     border: none;
-    &:hover {
-        background-color: #c2f5fa;
-    }
 }
 
 .correct {
     background-color: green;
-    &.hover {
-        background-color: transparent;
-    }
 }
 
 .incorrect {
