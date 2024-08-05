@@ -7,11 +7,17 @@ main {
 }
 
 .navigation-bar {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 8px;
     background-color: transparent;
+
+    button {
+        background: none;
+        border: none;
+    }
 }
 
 

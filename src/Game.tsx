@@ -1,4 +1,3 @@
-import { IconBase } from "react-icons";
 import { useQuestionStore } from "./store/questions";
 import { Question as QuestionType } from "./types";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
@@ -6,7 +5,7 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const getBackgroundColor = (info: QuestionType, answer?:string) => {
   const { userSelectedAnswer, correct } = info;
-  // Si ninguna pregunta ha sido clickeada, no hacer nadad:
+  // Si ninguna pregunta ha sido clickeada, no hacer nada:
   if (userSelectedAnswer === undefined) return "answer-button";
   // Si se clickea una respuesta incorrecta:
   if (userSelectedAnswer !== correct && userSelectedAnswer === answer) return "answer-button incorrect";
@@ -58,7 +57,7 @@ export const Game = () => {
       <button onClick={goPreviousQuestion} disabled={currentQuestion === 0}>
         <SlArrowLeft/>
       </button>
-
+      {currentQuestion + 1} / {questions.length}
       <button onClick={goNextQuestion} disabled={currentQuestion === questions.length-1}>
         <SlArrowRight/>
       </button>
