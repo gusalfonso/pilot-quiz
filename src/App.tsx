@@ -1,27 +1,14 @@
 import "./App.css";
-import { Card } from "./Card";
-import { Game } from "./Game";
-import { Start } from "./Start";
-import { useQuestionStore } from "./store/questions";
-// import { PilotLogo } from "./PilotLogo";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Game from "./pages/GamePage";
 
 function App() {
-  const questions = useQuestionStore(state => state.questions)
-
   return (
-    <main>
-        <div className="title">
-          <img src="/src/assets/planeicon.svg" alt="planeicon" />
-          {/* <PilotLogo /> */}
-          <h1>Pilot Quiz</h1>
-        </div>
-        {questions.length === 0 && <Start />}
-      
-        {questions.length > 0 && <Card><Game /></Card>}
-      
-      
-
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/game" element={<Game />} />
+    </Routes>
   );
 }
 export default App;

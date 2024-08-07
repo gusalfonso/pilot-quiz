@@ -1,15 +1,6 @@
 import { create } from "zustand";
-import { type Question } from "../types";
+import { State } from "../types";
 import confetti from "canvas-confetti";
-
-interface State {
-  questions: Question[];
-  currentQuestion: number;
-  fetchQuestions: (limit: number) => Promise<void>;
-  selectedAnswer: (questionId: number, answer: string) => Promise<void>;
-  goNextQuestion: () => void;
-  goPreviousQuestion: () => void;
-}
 
 export const useQuestionStore = create<State>((set, get) => {
   return {
@@ -43,18 +34,20 @@ export const useQuestionStore = create<State>((set, get) => {
       set({ questions: newQuestions });
     },
 
-    goNextQuestion : () => {
-      const { currentQuestion, questions } = get()
-      const nextQuestion = currentQuestion + 1 
+    goNextQuestion: () => {
+      const { currentQuestion, questions } = get();
+      const nextQuestion = currentQuestion + 1;
 
-      if (nextQuestion < questions.length) return set({currentQuestion:nextQuestion})
+      if (nextQuestion < questions.length)
+        return set({ currentQuestion: nextQuestion });
     },
 
-    goPreviousQuestion : () => {
-      const { currentQuestion } = get()
-      const previousQuestion = currentQuestion - 1 
+    goPreviousQuestion: () => {
+      const { currentQuestion } = get();
+      const previousQuestion = currentQuestion - 1;
 
-      if (currentQuestion > 0) return set({currentQuestion:previousQuestion})
+      if (currentQuestion > 0)
+        return set({ currentQuestion: previousQuestion });
     },
   };
 });
