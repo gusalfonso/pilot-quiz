@@ -3,12 +3,15 @@ import "../styles/Home.css";
 import { Card } from "../Card";
 import { useQuestionStore } from "../store/questions";
 import BasicModal from "../components/ModalLogin.tsx";
+import { CreateQuestionTable } from "../services/dblogin.ts";
 import { Link } from "react-router-dom";
 
 function Home() {
   const fetchQuestions = useQuestionStore((state) => state.fetchQuestions);
-  const handleClick = () => {
+
+  const handleClick = async () => {
     fetchQuestions(2);
+    await CreateQuestionTable();
   };
   return (
     <main>

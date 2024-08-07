@@ -1,8 +1,9 @@
 import "../App.css";
 import "../styles/Home.css";
 import { Card } from "../Card.tsx";
+import { Game } from "../Game.tsx";
 
-function Game() {
+function GamePage() {
   return (
     <main>
       <div className="title">
@@ -16,4 +17,4 @@ function Game() {
     </main>
   );
 }
-export default Game;
+export default GamePage;

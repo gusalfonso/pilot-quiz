@@ -2,6 +2,11 @@
   {
     "id": 1,
     "question": "¿Cuáles son los sistemas de control de vuelo primarios, esenciales para el control del avión?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image-name": "",
     "answers": [
       "Elevador, Alerón, Timón de Dirección",
       "Elevador, Flaps, Aletas Compensadoras",
@@ -11,6 +16,11 @@
   },
   {
     "id": 2,
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image-name": "",
     "question": "¿Cuántas horas de vuelo como piloto al mando debe completar un Piloto Privado de Avión, a partir que obtuvo su licencia, para estar facultado para transportar pasajeros?",
     "answers": ["15 Hs.", "20 Hs.", "25 Hs."],
     "correct": "25 Hs."

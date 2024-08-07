@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { State } from "../types";
 import confetti from "canvas-confetti";
+import { turso } from "../services/dblogin";
 
 export const useQuestionStore = create<State>((set, get) => {
   return {
@@ -8,13 +9,26 @@ export const useQuestionStore = create<State>((set, get) => {
     currentQuestion: 0,
 
     fetchQuestions: async (limit: number) => {
-      const res = await fetch("http://localhost:5173/data.json");
-      const json = await res.json();
+      const res = await turso.execute("SELECT * FROM questions;");
+      // const res = await fetch("http://localhost:5173/data.json");
+      // const json = await res.json();
 
-      const questions = json.sort(() => Math.random() - 0.5).slice(0, limit);
+      const transformed = res.rows.map((item) => {
+        const { answer1, answer2, answer3, correct, question, id } = item; // Extrae answer1, answer2, y answer3
+        return {
+          id: id,
+          question: question,
+          answers: [answer1, answer2, answer3],
+          correct: correct,
+        };
+      });
+
+      const questions = transformed
+        .sort(() => Math.random() - 0.5)
+        .slice(0, limit);
       set({ questions });
     },
-    selectedAnswer: (questionId: number, answer: string) => {
+    selectedAnswer: (questionId: string, answer: string) => {
       const { questions } = get();
       const newQuestions = structuredClone(questions);
       const questionIndex = newQuestions.findIndex((q) => q.id === questionId);
