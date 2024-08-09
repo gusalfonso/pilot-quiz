@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import { useQuestionStore } from "../store/questions";
 import { CreateQuestionTable } from "../services/dblogin.ts";
 import { Link } from "react-router-dom";
+import Card from "../components/Card.tsx";
 
 function Home() {
   const fetchQuestions = useQuestionStore((state) => state.fetchQuestions);
@@ -13,19 +14,13 @@ function Home() {
   };
   return (
     <main>
-      <div className="card">
-        <div className="card-logo">
-          <img src="/src/assets/planeicon.svg" alt="planeicon" />
-        </div>
-        <div className="card-header">
-          <h1>Pilot Quiz!</h1>
-        </div>
+      <Card title="Pilot Quiz">
         <Link to="/game">
-          <button onClick={handleClick} className="start-button std-btn">
+          <button onClick={handleClick} className="start-btn std-btn">
             ¡Empezar!
           </button>
         </Link>
-      </div>
+      </Card>
     </main>
   );
 }

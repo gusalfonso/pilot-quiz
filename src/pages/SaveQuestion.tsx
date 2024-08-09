@@ -1,17 +1,13 @@
 import React, { useState } from "react";
-import {
-  TextField,
-  Button,
-  Radio,
-  FormControlLabel,
-  Container,
-  Typography,
-  Box,
-} from "@mui/material";
+import Card from "../components/Card.tsx";
 import { CreateQuestion, CreateQuestionTable } from "../services/dblogin.ts";
+import "../styles/SaveQuestion.css";
 
 const QuestionForm: React.FC = () => {
   const [question, setQuestion] = useState<string>("");
+  const [category, setCategory] = useState<string>("");
+  const [category2, setCategory2] = useState<string>("");
+
   const [answers, setAnswers] = useState<[string, string, string]>([
     "",
     "",
@@ -71,61 +67,69 @@ const QuestionForm: React.FC = () => {
   };
 
   return (
-    <Container maxWidth="sm">
-      <Box component="form" onSubmit={handleSubmit} sx={{ mt: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Generador de Preguntas
-        </Typography>
-        <TextField
-          fullWidth
-          label="Pregunta"
-          variant="outlined"
-          value={question}
-          onChange={(e) => setQuestion(e.target.value)}
-          margin="normal"
-        />
-        {answers.map((answer, index) => (
-          <Box
-            key={index}
-            sx={{ display: "flex", alignItems: "center", mt: 2 }}
-          >
-            <TextField
-              fullWidth
-              label={`Respuesta ${index + 1}`}
-              variant="outlined"
-              value={answer}
-              onChange={(e) => handleAnswerChange(index, e.target.value)}
-              margin="normal"
+    <div className="question-generator-container">
+      <Card title="Add Question">
+        <form className="question-form" onSubmit={handleSubmit}>
+          <div className="form-item">
+            <input
+              type="text"
+              placeholder="Question"
+              value={question}
+              onChange={(e) => setQuestion(e.target.value)}
+              required
             />
-            <FormControlLabel
-              control={
-                <Radio
+          </div>
+          <div className="form-item">
+            <input
+              type="text"
+              placeholder="Category"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-item">
+            <input
+              type="text"
+              placeholder="Category"
+              value={category2}
+              onChange={(e) => setCategory2(e.target.value)}
+              required
+            />
+          </div>
+          {answers.map((answer, index) => (
+            <div key={index} className="form-item answer-item">
+              <label className="radio-label">
+                <input
+                  type="radio"
                   checked={correctAnswerIndex === index}
                   onChange={() => setCorrectAnswerIndex(index)}
                 />
-              }
-              label="Correcta"
-              sx={{ ml: 2 }}
+                Correct
+              </label>
+              <input
+                type="text"
+                placeholder={`Answer ${index + 1}`}
+                value={answer}
+                onChange={(e) => handleAnswerChange(index, e.target.value)}
+                required
+              />
+            </div>
+          ))}
+          {/* <div className="form-item">
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageChange}
+              className="file-input"
             />
-          </Box>
-        ))}
-        {/* <input
-          type="file"
-          accept="image/*"
-          onChange={handleImageChange}
-          style={{ marginTop: 20 }}
-        /> */}
-        <Button
-          type="submit"
-          variant="contained"
-          color="primary"
-          fullWidth
-          sx={{ mt: 3 }}
-        >
-          Enviar Pregunta
-        </Button>
-      </Box>
-    </Container>
+          </div> */}
+          <button type="submit" className="std-btn">
+            Add Question
+          </button>
+        </form>
+      </Card>
+    </div>
   );
 };
 

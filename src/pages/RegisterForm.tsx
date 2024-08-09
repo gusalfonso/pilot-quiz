@@ -15,6 +15,7 @@ function RegisterForm() {
   const navigate = useNavigate();
 
   const clearForm = () => {
+    //TO DO - trocar por clear nativo
     setFirstName("");
     setLastName("");
     setUsername("");

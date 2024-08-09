@@ -25,3 +25,9 @@ export interface User {
   email: string;
   password: string;
 }
+
+// CARD TYPES
+interface CardProps {
+  title: string;
+  children: ReactNode;
+}

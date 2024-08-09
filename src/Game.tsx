@@ -5,7 +5,7 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 const getBackgroundColor = (info: QuestionType, answer?: string) => {
   const { userSelectedAnswer, correct } = info;
   // Si ninguna pregunta ha sido clickeada, no hacer nada:
-  if (userSelectedAnswer === undefined) return "answer-button";
+  //if (userSelectedAnswer === undefined) return "answer-button";
   // Si se clickea una respuesta incorrecta:
   if (userSelectedAnswer !== correct && userSelectedAnswer === answer)
     return "answer-button incorrect";

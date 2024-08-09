@@ -20,65 +20,7 @@ main {
   }
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  .login-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
-  }
-}
-
-.card-container {
-  max-width: 600px;
-  background-color: #c2f5fabc;
-  box-shadow: -4px 3px 2px #1111;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 10px;
-
-  h1 {
-    margin: 0;
-  }
-  .question {
-    text-align: center;
-    font-size: 20px;
-    padding: 20px;
-  }
-}
-
 img {
   width: 36px;
   height: 36px;
-}
-
-.start-button {
-  padding: 8px 16px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.answer-button {
-  padding: 10px;
-  width: 100%;
-  background: transparent;
-  border: none;
-}
-
-.correct {
-  background-color: green;
-}
-
-.incorrect {
-  background-color: red;
 }

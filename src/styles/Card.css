@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.5);
-  padding: 4rem;
+  padding: 1rem 3rem 4rem 3rem;
   border-radius: 10px;
   position: relative;
 }
@@ -42,3 +42,22 @@
   font-size: calc(1rem * 0.8);
   opacity: 0.8;
 }
+
+.settings {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 12rem;
+}
+
+/* 
+sugestao pro css:
+.card {
+  .header{
+
+  }
+  .logo{
+
+  }
+} */

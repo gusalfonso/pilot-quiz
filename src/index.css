@@ -17,6 +17,11 @@ body {
   padding: 12px;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .std-btn {
   background-color: #09f;
   border-radius: 4px;

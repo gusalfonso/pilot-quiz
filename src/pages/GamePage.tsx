@@ -1,6 +1,6 @@
 import "../App.css";
 import "../styles/Home.css";
-import { Card } from "../Card.tsx";
+import Card from "../components/Card.tsx";
 import { Game } from "../Game.tsx";
 
 function GamePage() {
@@ -11,7 +11,7 @@ function GamePage() {
         <h1>Pilot Quiz</h1>
       </div>
 
-      <Card>
+      <Card title="Game">
         <Game />
       </Card>
     </main>

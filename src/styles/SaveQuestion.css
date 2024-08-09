@@ -1,0 +1,35 @@
+.question-generator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.question-form .form-item {
+  position: relative;
+}
+
+.question-form input[type="text"],
+.question-form input[type="password"],
+.question-form input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  width: 100%;
+  transition: background 0.5s;
+  text-align: center;
+}
+
+.answer-item {
+  display: flex;
+  align-items: center;
+}
