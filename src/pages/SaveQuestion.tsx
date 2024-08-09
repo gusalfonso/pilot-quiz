@@ -7,6 +7,7 @@ const QuestionForm: React.FC = () => {
   const [question, setQuestion] = useState<string>("");
   const [category, setCategory] = useState<string>("");
   const [category2, setCategory2] = useState<string>("");
+  const [source, setSource] = useState<string>("");
 
   const [answers, setAnswers] = useState<[string, string, string]>([
     "",
@@ -94,6 +95,15 @@ const QuestionForm: React.FC = () => {
               placeholder="Category"
               value={category2}
               onChange={(e) => setCategory2(e.target.value)}
+              required
+            />
+          </div>
+          <div className="form-item">
+            <input
+              type="text"
+              placeholder="Source"
+              value={source}
+              onChange={(e) => setSource(e.target.value)}
               required
             />
           </div>
