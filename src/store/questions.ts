@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { State } from "../types";
 import confetti from "canvas-confetti";
-import { turso } from "../services/dblogin";
+import { turso } from "../services/client";
 
 export const useQuestionStore = create<State>((set, get) => {
   return {

@@ -1,42 +1,6 @@
-import { createClient } from "@libsql/client";
 import { v4 as uuidv4 } from "uuid";
 import bcrypt from "bcryptjs";
-import { Question, User } from "../types";
-
-// CREACIÓN DEL CLIENTE DE TURSO:
-export const turso = createClient({
-  url: import.meta.env.VITE_TURSO_DATABASE_URL as string,
-  authToken: import.meta.env.VITE_TURSO_AUTH_TOKEN as string,
-});
-
-// LIDIANDO CON LA TABLA DE USUARIOS:
-export const CreateUsersTable = async (): Promise<void> => {
-  await turso.execute(
-    "CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, username TEXT NOT NULL UNIQUE, name TEXT NOT NULL, surname TEXT NOT NULL, email TEXT NOT NULL UNIQUE, password TEXT NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);"
-  );
-};
-
-// INYECCIÓN DE USUARIO EN LA TABLA:
-export const CreateUser = async ({
-  username,
-  name,
-  surname,
-  email,
-  password,
-}: User): Promise<void> => {
-  const hash = bcrypt.hashSync(password, 10);
-  await turso.execute({
-    sql: "INSERT INTO users (id, username, name, surname, email, password) VALUES (:id, :username, :name, :surname, :email, :password)",
-    args: {
-      id: uuidv4(),
-      username: username,
-      name: name,
-      surname: surname,
-      email: email,
-      password: hash,
-    },
-  });
-};
+import { turso } from "./client";
 
 // CREACIÓN TABLA DE PREGUNTAS:
 export const CreateQuestionTable = async (): Promise<void> => {
@@ -76,3 +40,28 @@ export const CreateQuestion = async ({
     },
   });
 };
+
+export async function authenticateUser(
+  email: string,
+  password: string
+): Promise<boolean> {
+  try {
+    const result = await turso.execute({
+      sql: "SELECT password FROM users WHERE email = :email",
+      args: { email },
+    });
+
+    const row = result.rows[0]; // Obtener la primera fila
+    if (!row) return false;
+
+    const storedPassword = String(row.password); // Accede al campo 'password'
+
+    if (!storedPassword) return false;
+
+    // Comparar la contraseña proporcionada con la almacenada
+    return bcrypt.compareSync(password, storedPassword);
+  } catch (error) {
+    console.error("Error al autenticar:", error);
+    throw error; // Lanza el error para que pueda ser manejado en el componente
+  }
+}

@@ -1,0 +1,67 @@
+@import "./Card.css";
+
+.register-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.register-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.register-card-form .form-item {
+  position: relative;
+}
+
+.register-card-form input[type="text"],
+.register-card-form input[type="password"],
+.register-card-form input[type="email"] {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  width: 100%;
+  transition: background 0.5s;
+  text-align: center;
+}
+
+.register-card-form input:focus {
+  background: white;
+}
+
+.register-card .std-btn {
+  padding: 0.5rem 0;
+  transition: background 0.5s;
+}
+
+.register-card-footer {
+  margin-top: 1.5rem;
+  font-size: calc(1rem * 0.8);
+  text-align: center;
+}
+
+.register-card-footer a {
+  text-decoration: none;
+  color: #35339a;
+}
+
+.register-card-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 0;
+  }
+
+  .register-card {
+    width: 280px;
+    padding: 2rem;
+  }
+}

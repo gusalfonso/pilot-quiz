@@ -1,8 +1,6 @@
 import "../App.css";
 import "../styles/Home.css";
-import { Card } from "../Card";
 import { useQuestionStore } from "../store/questions";
-import BasicModal from "../components/ModalLogin.tsx";
 import { CreateQuestionTable } from "../services/dblogin.ts";
 import { Link } from "react-router-dom";
 
@@ -15,21 +13,19 @@ function Home() {
   };
   return (
     <main>
-      <div className="title">
-        <img src="/src/assets/planeicon.svg" alt="planeicon" />
-        <h1>Pilot Quiz</h1>
-        <div className="">
-          <BasicModal />
+      <div className="card">
+        <div className="card-logo">
+          <img src="/src/assets/planeicon.svg" alt="planeicon" />
         </div>
-      </div>
-
-      <Card>
+        <div className="card-header">
+          <h1>Pilot Quiz!</h1>
+        </div>
         <Link to="/game">
           <button onClick={handleClick} className="start-button std-btn">
             ¡Empezar!
           </button>
         </Link>
-      </Card>
+      </div>
     </main>
   );
 }

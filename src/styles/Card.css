@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 4rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  transform: rotate(-6deg);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.card-logo {
+  margin-inline: auto;
+}
+
+.card-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.card-header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.card-header h1 + div {
+  font-size: calc(1rem * 0.8);
+  opacity: 0.8;
+}

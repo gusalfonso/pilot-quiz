@@ -7,7 +7,7 @@ export interface Question {
   isCorrectUserAnswer?: boolean;
 }
 
-interface State {
+export interface State {
   questions: Question[];
   currentQuestion: number;
   fetchQuestions: (limit: number) => Promise<void>;
@@ -16,11 +16,12 @@ interface State {
   goPreviousQuestion: () => void;
 }
 
-// Tipos de datos
-export type User = {
+// USER TYPES
+export interface User {
+  id?: string;
   username: string;
   name: string;
   surname: string;
   email: string;
   password: string;
-};
+}
