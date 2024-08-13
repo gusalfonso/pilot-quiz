@@ -4,6 +4,7 @@ import { authenticateUser } from "../services/dblogin";
 import "../styles/LoginCard.css";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
+import Card from "../components/Card/Card";
 
 function LoginCard() {
   const [email, setEmail] = useState("");
@@ -41,15 +42,7 @@ function LoginCard() {
   return (
     <>
       <div className="login-card-container">
-        <div className="card">
-          <div className="homeicon"></div>
-          <div className="card-logo">
-            <img src="/src/assets/planeicon.svg" alt="planeicon" />
-          </div>
-          <div className="card-header">
-            <h1>Sign In</h1>
-            <div>Please login to use the platform</div>
-          </div>
+        <Card title="Log in">
           <form className="login-card-form" onSubmit={handleSubmit}>
             <div className="form-item">
               <input
@@ -82,7 +75,7 @@ function LoginCard() {
             Don't have an account?{" "}
             <a href="/register">Create a free account.</a>
           </div>
-        </div>
+        </Card>
       </div>
     </>
   );

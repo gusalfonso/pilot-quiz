@@ -3,8 +3,8 @@
   align-items: center;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.5);
-  padding: 1rem 3rem 4rem 3rem;
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 1rem;
   position: relative;
 }
 
@@ -14,7 +14,7 @@
   inset: 0;
   background: rgba(255, 255, 255, 0.15);
   transform: rotate(-6deg);
-  border-radius: 10px;
+  border-radius: 1rem;
   z-index: -1;
 }
 
@@ -23,32 +23,22 @@
 }
 
 .card-logo img {
-  width: 50px;
+  width: 45px;
   height: auto;
 }
 
 .card-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   text-align: center;
 }
 
 .card-header h1 {
   font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
+  font-weight: 500;
 }
 
 .card-header h1 + div {
-  font-size: calc(1rem * 0.8);
   opacity: 0.8;
-}
-
-.settings {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  min-width: 12rem;
 }
 
 /* 

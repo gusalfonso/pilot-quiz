@@ -6,6 +6,7 @@ import SaveQuestion from "./pages/SaveQuestion";
 import RegisterForm from "./pages/RegisterForm";
 import LoginForm from "./pages/LoginForm";
 import { Toaster } from "sonner";
+import Result from "./pages/Result";
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/game" element={<GamePage />} />
+        <Route path="/results" element={<Result />} />
         <Route path="/questioninput" element={<SaveQuestion />} />
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
+        <Route path="/settings" element={""} />
       </Routes>
       <Toaster richColors />
     </>

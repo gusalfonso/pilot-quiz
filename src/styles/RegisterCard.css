@@ -1,4 +1,4 @@
-@import "./Card.css";
+@import "../components/Card/Card.css";
 
 .register-card-container {
   display: flex;

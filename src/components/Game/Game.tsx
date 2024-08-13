@@ -1,30 +1,32 @@
-import { useQuestionStore } from "./store/questions";
-import { Question as QuestionType } from "./types";
+import { useEffect } from "react";
+import { useQuestionStore } from "../../store/questions";
+import { Question as QuestionType } from "../../types";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import "./Game.css";
 
 const getBackgroundColor = (info: QuestionType, answer?: string) => {
   const { userSelectedAnswer, correct } = info;
-  // Si ninguna pregunta ha sido clickeada, no hacer nada:
-  //if (userSelectedAnswer === undefined) return "answer-button";
-  // Si se clickea una respuesta incorrecta:
   if (userSelectedAnswer !== correct && userSelectedAnswer === answer)
     return "answer-button incorrect";
-  // Si se clickea una respuesta correcta
-  if (answer === correct) return "answer-button correct";
-
+  if (answer === correct && userSelectedAnswer) return "answer-button correct";
   return "answer-button";
 };
 
 const Question = ({ info }: { info: QuestionType }) => {
+  const goNextQuestion = useQuestionStore((state) => state.goNextQuestion);
+
   const selectAnswer = useQuestionStore((state) => state.selectedAnswer);
   const createHandleClick = (answer: string) => () => {
     selectAnswer(info.id, answer);
+    setTimeout(() => {
+      goNextQuestion();
+    }, 500);
   };
 
   return (
-    <>
+    <div className="question-container">
       <h1 className="question">{info.question}</h1>
-      <ul>
+      <ul className="answer-container">
         {info.answers.map((answer, index) => (
           <li key={index}>
             <button
@@ -37,13 +39,19 @@ const Question = ({ info }: { info: QuestionType }) => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 
 export const Game = () => {
+  const fetchQuestions = useQuestionStore((state) => state.fetchQuestions);
+
   const questions = useQuestionStore((state) => state.questions);
   const currentQuestion = useQuestionStore((state) => state.currentQuestion);
+
+  useEffect(() => {
+    fetchQuestions(10);
+  }, [fetchQuestions]);
 
   const questionInfo = questions[currentQuestion];
 
@@ -67,7 +75,11 @@ export const Game = () => {
         </button>
       </nav>
 
-      <Question info={questionInfo} />
+      {questionInfo ? (
+        <Question info={questionInfo} />
+      ) : (
+        <p>Loading question...</p>
+      )}
     </>
   );
 };

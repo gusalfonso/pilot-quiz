@@ -24,8 +24,8 @@ ul {
 
 .std-btn {
   background-color: #09f;
-  border-radius: 4px;
-  color: black;
+  border-radius: 0.3rem;
+  color: white;
   &:hover {
     scale: 1.03;
     box-shadow: -2px 1.5px black;

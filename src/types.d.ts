@@ -29,5 +29,6 @@ export interface User {
 // CARD TYPES
 interface CardProps {
   title: string;
+  subtitle?: string;
   children: ReactNode;
 }

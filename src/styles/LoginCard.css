@@ -1,4 +1,4 @@
-@import "./Card.css";
+@import "../components/Card/Card.css";
 /* Login Card Logo */
 .login-card-logo img {
   width: 50px;

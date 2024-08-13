@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../components/Card.tsx";
+import Card from "../components/Card/Card.tsx";
 import { CreateQuestion, CreateQuestionTable } from "../services/dblogin.ts";
 import "../styles/SaveQuestion.css";
 
