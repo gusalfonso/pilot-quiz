@@ -2,7 +2,7 @@
 
 This application is designed to help users prepare for the ANAC (Agência Nacional de Aviação Civil) pilot exam by offering a comprehensive quiz experience. The app provides a range of questions that mirror the content and difficulty of the actual exam, allowing users to practice and assess their knowledge in a simulated environment.
 
-![PilotQuiz](assets/pilotquiz.png)
+![PilotQuiz](src/assets/pilotquiz.png)
 
 ## Features
 

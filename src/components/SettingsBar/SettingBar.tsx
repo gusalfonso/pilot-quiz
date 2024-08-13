@@ -10,12 +10,8 @@ export default function SettingBar() {
   const { username, isAuthenticated, logout } = useAuthStore();
 
   const handleLogOut = () => {
-    console.log(username);
     logout();
-    console.log(username);
   };
-
-  console.log(username);
 
   return (
     <div className="settings-container">

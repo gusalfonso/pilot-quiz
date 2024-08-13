@@ -13,8 +13,6 @@ export default function Result() {
       ? "Felicitaciones, has ganado!"
       : "Sigue intentando!";
 
-  console.log(correctAnswersCount / questions.length >= 0.6);
-
   return (
     <Card title={title}>
       <p className="resultado">
