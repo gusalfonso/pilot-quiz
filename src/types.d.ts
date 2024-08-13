@@ -14,6 +14,7 @@ export interface State {
   selectedAnswer: (questionId: string, answer: string) => Promise<void>;
   goNextQuestion: () => void;
   goPreviousQuestion: () => void;
+  resetCurrent: () => void;
 }
 
 // USER TYPES

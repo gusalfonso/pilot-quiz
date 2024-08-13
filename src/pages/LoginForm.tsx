@@ -64,9 +64,9 @@ function LoginCard() {
                 required
               />
             </div>
-            <div className="form-item-other">
+            {/* <div className="form-item-other">
               <a href="#">I forgot my password!</a>
-            </div>
+            </div> */}
             <button className="std-btn" type="submit">
               Sign In
             </button>

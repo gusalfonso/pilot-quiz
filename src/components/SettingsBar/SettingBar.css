@@ -1,24 +1,27 @@
 .settings-container {
   display: flex;
-  justify-content: space-between; /* Distribuye los íconos uniformemente */
-  align-items: center; /* Centra los íconos verticalmente */
-  width: 100%; /* Ocupa todo el ancho del contenedor */
+  justify-content: space-between;
+  flex-flow: row-reverse;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.7rem;
 }
 
 .icon {
-  font-size: 2rem; /* Tamaño del ícono */
-  flex: 1; /* Asegura que cada ícono ocupe espacio dentro del contenedor */
-  text-align: center; /* Centra los íconos dentro de su espacio asignado */
+  font-size: 2rem;
+  flex: 1;
+  text-align: center;
+  color: #09f;
 }
 
 .home {
-  justify-self: start; /* Asegura que home esté a la izquierda */
+  justify-self: start;
 }
 
 .settings {
-  justify-self: center; /* Asegura que settings esté en el centro */
+  justify-self: center;
 }
 
 .user {
-  justify-self: end; /* Asegura que user esté a la derecha */
+  justify-self: end;
 }

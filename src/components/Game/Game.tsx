@@ -3,6 +3,7 @@ import { useQuestionStore } from "../../store/questions";
 import { Question as QuestionType } from "../../types";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import "./Game.css";
+import { useNavigate } from "react-router-dom";
 
 const getBackgroundColor = (info: QuestionType, answer?: string) => {
   const { userSelectedAnswer, correct } = info;
@@ -44,15 +45,9 @@ const Question = ({ info }: { info: QuestionType }) => {
 };
 
 export const Game = () => {
-  const fetchQuestions = useQuestionStore((state) => state.fetchQuestions);
-
   const questions = useQuestionStore((state) => state.questions);
   const currentQuestion = useQuestionStore((state) => state.currentQuestion);
-
-  useEffect(() => {
-    fetchQuestions(10);
-  }, [fetchQuestions]);
-
+  const navigate = useNavigate();
   const questionInfo = questions[currentQuestion];
 
   const goNextQuestion = useQuestionStore((state) => state.goNextQuestion);
@@ -60,7 +55,23 @@ export const Game = () => {
     (state) => state.goPreviousQuestion
   );
 
-  return (
+  console.log(questions);
+
+  useEffect(() => {
+    const allAnswered =
+      questions.length &&
+      questions.every((q) => q.userSelectedAnswer !== undefined);
+    console.log(allAnswered);
+
+    if (allAnswered) {
+      console.log("Hola mundo");
+      setTimeout(() => {
+        navigate("/results");
+      }, 300);
+    }
+  }, [questions, navigate]);
+
+  return questionInfo ? (
     <>
       <nav className="navigation-bar">
         <button onClick={goPreviousQuestion} disabled={currentQuestion === 0}>
@@ -74,12 +85,32 @@ export const Game = () => {
           <SlArrowRight />
         </button>
       </nav>
-
-      {questionInfo ? (
-        <Question info={questionInfo} />
-      ) : (
-        <p>Loading question...</p>
-      )}
+      <Question info={questionInfo} />
     </>
+  ) : (
+    <p>Loading question...</p>
   );
+
+  // (
+  //   <>
+  //     <nav className="navigation-bar">
+  //       <button onClick={goPreviousQuestion} disabled={currentQuestion === 0}>
+  //         <SlArrowLeft />
+  //       </button>
+  //       {currentQuestion + 1} / {questions.length}
+  //       <button
+  //         onClick={goNextQuestion}
+  //         disabled={currentQuestion === questions.length - 1}
+  //       >
+  //         <SlArrowRight />
+  //       </button>
+  //     </nav>
+
+  //     {questionInfo ? (
+  //       <Question info={questionInfo} />
+  //     ) : (
+  //       <p>Loading question...</p>
+  //     )}
+  //   </>
+  // );
 };

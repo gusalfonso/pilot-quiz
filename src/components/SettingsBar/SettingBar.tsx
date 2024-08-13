@@ -19,25 +19,25 @@ export default function SettingBar() {
 
   return (
     <div className="settings-container">
-      {location.pathname !== "/" && (
-        <Link to={"/"}>
-          <FaHome className="home" />
+      {!isAuthenticated ? (
+        <Link to={"/login"}>
+          <FaUser className="user" color="black" />
+        </Link>
+      ) : (
+        <Link to={"/"} onClick={handleLogOut}>
+          <MdLogout className="user" color="black" />
         </Link>
       )}
 
       {isAuthenticated && username === "alfonsgustavo@gmail.com" && (
         <Link to={"/settings"}>
-          <FaGear className="settings" />
+          <FaGear className="settings" color="black" />
         </Link>
       )}
 
-      {!isAuthenticated ? (
-        <Link to={"/login"}>
-          <FaUser className="user" />
-        </Link>
-      ) : (
-        <Link to={"/"} onClick={handleLogOut}>
-          <MdLogout className="user" />
+      {location.pathname !== "/" && (
+        <Link to={"/"}>
+          <FaHome className="home" color="black" />
         </Link>
       )}
     </div>

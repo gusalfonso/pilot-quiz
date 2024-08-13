@@ -26,7 +26,8 @@ export const useQuestionStore = create<State>((set, get) => {
       const questions = transformed
         .sort(() => Math.random() - 0.5)
         .slice(0, limit);
-      set({ questions });
+      set({ questions, currentQuestion: 0 });
+      // return questions;
     },
     selectedAnswer: (questionId: string, answer: string) => {
       const { questions } = get();
@@ -63,5 +64,10 @@ export const useQuestionStore = create<State>((set, get) => {
       if (currentQuestion > 0)
         return set({ currentQuestion: previousQuestion });
     },
+
+    resetCurrent: () =>
+      set({
+        currentQuestion: 0,
+      }),
   };
 });

@@ -1,13 +1,25 @@
-import confetti from "canvas-confetti";
 import Card from "../components/Card/Card";
+import { useQuestionStore } from "../store/questions";
+import "../styles/Result.css";
 
 export default function Result() {
-  setTimeout(() => {
-    confetti;
-  }, 200);
+  const questions = useQuestionStore((state) => state.questions);
+  const correctAnswersCount = questions.filter(
+    (question) => question.userSelectedAnswer === question.correct
+  ).length;
+
+  const title =
+    correctAnswersCount / questions.length >= 0.6
+      ? "Felicitaciones, has ganado!"
+      : "Sigue intentando!";
+
+  console.log(correctAnswersCount / questions.length >= 0.6);
+
   return (
-    <Card title={"Felicitaciones!"}>
-      <div>¡Has Ganado!</div>
+    <Card title={title}>
+      <p className="resultado">
+        Respondiste bien {correctAnswersCount} preguntas de {questions.length}!
+      </p>
     </Card>
   );
 }
