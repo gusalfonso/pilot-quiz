@@ -3,7 +3,7 @@ import Card from "../components/Card/Card.tsx";
 import { CreateQuestion, CreateQuestionTable } from "../services/dblogin.ts";
 import "../styles/SaveQuestion.css";
 
-const QuestionForm: React.FC = () => {
+function QuestionForm() {
   const [question, setQuestion] = useState<string>("");
   const [category, setCategory] = useState<string>("");
   const [category2, setCategory2] = useState<string>("");
@@ -69,12 +69,12 @@ const QuestionForm: React.FC = () => {
 
   return (
     <div className="question-generator-container">
-      <Card title="Add Question">
+      <Card title="Agregar Pregunta">
         <form className="question-form" onSubmit={handleSubmit}>
           <div className="form-item">
             <input
               type="text"
-              placeholder="Question"
+              placeholder="Pregunta"
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               required
@@ -83,7 +83,7 @@ const QuestionForm: React.FC = () => {
           <div className="form-item">
             <input
               type="text"
-              placeholder="Category"
+              placeholder="Categoría"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               required
@@ -92,7 +92,7 @@ const QuestionForm: React.FC = () => {
           <div className="form-item">
             <input
               type="text"
-              placeholder="Category"
+              placeholder="Categoría 2"
               value={category2}
               onChange={(e) => setCategory2(e.target.value)}
               required
@@ -101,7 +101,7 @@ const QuestionForm: React.FC = () => {
           <div className="form-item">
             <input
               type="text"
-              placeholder="Source"
+              placeholder="Fuente"
               value={source}
               onChange={(e) => setSource(e.target.value)}
               required
@@ -115,11 +115,11 @@ const QuestionForm: React.FC = () => {
                   checked={correctAnswerIndex === index}
                   onChange={() => setCorrectAnswerIndex(index)}
                 />
-                Correct
+                Correcta
               </label>
               <input
                 type="text"
-                placeholder={`Answer ${index + 1}`}
+                placeholder={`Respuesta ${index + 1}`}
                 value={answer}
                 onChange={(e) => handleAnswerChange(index, e.target.value)}
                 required
@@ -135,12 +135,12 @@ const QuestionForm: React.FC = () => {
             />
           </div> */}
           <button type="submit" className="std-btn">
-            Add Question
+            Agregar Pregunta
           </button>
         </form>
       </Card>
     </div>
   );
-};
+}
 
 export default QuestionForm;

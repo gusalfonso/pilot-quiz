@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import bcrypt from "bcryptjs";
 import { turso } from "./client";
+import { Question } from "../types";
 
 // CREACIÓN TABLA DE PREGUNTAS:
 export const CreateQuestionTable = async (): Promise<void> => {

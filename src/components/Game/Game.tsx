@@ -18,7 +18,7 @@ const Question = ({ info }: { info: QuestionType }) => {
 
   const selectAnswer = useQuestionStore((state) => state.selectedAnswer);
   const createHandleClick = (answer: string) => () => {
-    selectAnswer(info.id, answer);
+    if (info.id) selectAnswer(info.id, answer);
     setTimeout(() => {
       goNextQuestion();
     }, 500);

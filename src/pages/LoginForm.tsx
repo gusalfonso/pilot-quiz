@@ -22,7 +22,7 @@ function LoginCard() {
         if (isAuthenticated) {
           login(email);
           localStorage.setItem("userEmail", email);
-          toast.success("Sucess!", { duration: 1500 });
+          toast.success("¡Éxito!", { duration: 1500 });
           setEmail("");
           setPassword("");
           setTimeout(() => {
@@ -42,12 +42,12 @@ function LoginCard() {
   return (
     <>
       <div className="login-card-container">
-        <Card title="Log in">
+        <Card title="Iniciar sesión">
           <form className="login-card-form" onSubmit={handleSubmit}>
             <div className="form-item">
               <input
                 type="text"
-                placeholder="Enter Email"
+                placeholder="Introduce tu correo electrónico"
                 id="emailForm"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -57,7 +57,7 @@ function LoginCard() {
             <div className="form-item">
               <input
                 type="password"
-                placeholder="Enter Password"
+                placeholder="Introduce tu contraseña"
                 id="passwordForm"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -65,15 +65,15 @@ function LoginCard() {
               />
             </div>
             {/* <div className="form-item-other">
-              <a href="#">I forgot my password!</a>
+              <a href="#">¡Olvidé mi contraseña!</a>
             </div> */}
             <button className="std-btn" type="submit">
-              Sign In
+              Iniciar sesión
             </button>
           </form>
           <div className="login-card-footer">
-            Don't have an account?{" "}
-            <a href="/register">Create a free account.</a>
+            ¿No tienes una cuenta?{" "}
+            <a href="/register">Crea una cuenta gratuita.</a>
           </div>
         </Card>
       </div>

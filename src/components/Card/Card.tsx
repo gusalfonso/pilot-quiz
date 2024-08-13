@@ -8,7 +8,7 @@ export default function Card({ title, children, subtitle }: CardProps) {
       <div className="card">
         <SettingBar />
         <div className="card-logo">
-          <img src="/src/assets/planeicon.svg" alt="planeicon" />
+          <img src="/img/planeicon.svg" alt="planeicon" />
         </div>
         <div className="card-header">
           <h1>{title}</h1>

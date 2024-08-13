@@ -1,10 +1,16 @@
 export interface Question {
-  id: string;
+  id?: string;
   question: string;
   answers: string[];
-  correct: string;
+  correct?: string;
   userSelectedAnswer?: string;
   isCorrectUserAnswer?: boolean;
+  category: string;
+  category2: string;
+  source: string;
+  creator: string;
+  imageName: string;
+  correctAnswer: string;
 }
 
 export interface State {
@@ -28,7 +34,7 @@ export interface User {
 }
 
 // CARD TYPES
-interface CardProps {
+export interface CardProps {
   title: string;
   subtitle?: string;
   children: ReactNode;

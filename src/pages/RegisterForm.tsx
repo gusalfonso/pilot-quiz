@@ -15,7 +15,7 @@ function RegisterForm() {
   const navigate = useNavigate();
 
   const clearForm = () => {
-    //TO DO - trocar por clear nativo
+    // TO DO - cambiar por limpieza nativa
     setFirstName("");
     setLastName("");
     setUsername("");
@@ -48,7 +48,7 @@ function RegisterForm() {
         password,
       });
 
-      toast.success("Registro exitoso!", { duration: 1500 });
+      toast.success("¡Registro exitoso!", { duration: 1500 });
       setTimeout(() => {
         navigate("/login");
       }, 1500);
@@ -66,14 +66,14 @@ function RegisterForm() {
           <img src="/src/assets/planeicon.svg" alt="planeicon" />
         </div>
         <div className="card-header">
-          <h1>Sign Up</h1>
-          <div>Please fill in the details to create an account</div>
+          <h1>Registrarse</h1>
+          <div>Por favor, completa los detalles para crear una cuenta</div>
         </div>
         <form className="register-card-form" onSubmit={handleSubmit}>
           <div className="form-item">
             <input
               type="text"
-              placeholder="Username"
+              placeholder="Nombre de usuario"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
@@ -82,7 +82,7 @@ function RegisterForm() {
           <div className="form-item">
             <input
               type="text"
-              placeholder="First Name"
+              placeholder="Nombre"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               required
@@ -91,7 +91,7 @@ function RegisterForm() {
           <div className="form-item">
             <input
               type="text"
-              placeholder="Last Name"
+              placeholder="Apellido"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               required
@@ -100,7 +100,7 @@ function RegisterForm() {
           <div className="form-item">
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Correo electrónico"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -109,7 +109,7 @@ function RegisterForm() {
           <div className="form-item">
             <input
               type="email"
-              placeholder="Confirm Email"
+              placeholder="Confirmar correo electrónico"
               value={confirmEmail}
               onChange={(e) => setConfirmEmail(e.target.value)}
               required
@@ -118,7 +118,7 @@ function RegisterForm() {
           <div className="form-item">
             <input
               type="password"
-              placeholder="Password"
+              placeholder="Contraseña"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -127,18 +127,18 @@ function RegisterForm() {
           <div className="form-item">
             <input
               type="password"
-              placeholder="Confirm Password"
+              placeholder="Confirmar contraseña"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />
           </div>
           <button type="submit" className="std-btn">
-            Sign Up
+            Registrarse
           </button>
         </form>
         <div className="register-card-footer">
-          Already have an account? <a href="/login">Sign In here.</a>
+          ¿Ya tienes una cuenta? <a href="/login">Inicia sesión aquí.</a>
         </div>
       </div>
     </div>
