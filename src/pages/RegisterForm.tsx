@@ -56,7 +56,6 @@ function RegisterForm() {
       clearForm();
     } catch (error) {
       console.error("Error al registrar el usuario:", error);
-      // Aquí puedes manejar el error, mostrar un mensaje al usuario, etc.
     }
   };
 

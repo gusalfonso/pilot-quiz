@@ -36,7 +36,7 @@ export const useQuestionStore = create<State>((set, get) => ({
       const newQuestions = structuredClone(questions);
       const questionIndex = newQuestions.findIndex((q) => q.id === questionId);
 
-      if (questionIndex === -1) return; // Si no se encuentra la pregunta, no hacer nada
+      if (questionIndex === -1) return;
 
       const questionInfo = newQuestions[questionIndex];
       const isCorrectUserAnswer = questionInfo.correct === answer;

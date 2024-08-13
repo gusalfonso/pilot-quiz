@@ -7,13 +7,10 @@ import { useQuestionStore } from "../store/questions.ts";
 
 function Home() {
   const fetchQuestions = useQuestionStore((state) => state.fetchQuestions);
-  const currentQuestion = useQuestionStore((state) => state.currentQuestion);
 
   useEffect(() => {
     fetchQuestions(10);
   }, [fetchQuestions]);
-
-  console.log(currentQuestion);
 
   return (
     <main>

@@ -55,16 +55,12 @@ export const Game = () => {
     (state) => state.goPreviousQuestion
   );
 
-  console.log(questions);
-
   useEffect(() => {
     const allAnswered =
       questions.length &&
       questions.every((q) => q.userSelectedAnswer !== undefined);
-    console.log(allAnswered);
 
     if (allAnswered) {
-      console.log("Hola mundo");
       setTimeout(() => {
         navigate("/results");
       }, 300);
@@ -90,27 +86,4 @@ export const Game = () => {
   ) : (
     <p>Loading question...</p>
   );
-
-  // (
-  //   <>
-  //     <nav className="navigation-bar">
-  //       <button onClick={goPreviousQuestion} disabled={currentQuestion === 0}>
-  //         <SlArrowLeft />
-  //       </button>
-  //       {currentQuestion + 1} / {questions.length}
-  //       <button
-  //         onClick={goNextQuestion}
-  //         disabled={currentQuestion === questions.length - 1}
-  //       >
-  //         <SlArrowRight />
-  //       </button>
-  //     </nav>
-
-  //     {questionInfo ? (
-  //       <Question info={questionInfo} />
-  //     ) : (
-  //       <p>Loading question...</p>
-  //     )}
-  //   </>
-  // );
 };

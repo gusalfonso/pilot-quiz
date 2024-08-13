@@ -52,17 +52,16 @@ export async function authenticateUser(
       args: { email },
     });
 
-    const row = result.rows[0]; // Obtener la primera fila
+    const row = result.rows[0];
     if (!row) return false;
 
-    const storedPassword = String(row.password); // Accede al campo 'password'
+    const storedPassword = String(row.password);
 
     if (!storedPassword) return false;
 
-    // Comparar la contraseña proporcionada con la almacenada
     return bcrypt.compareSync(password, storedPassword);
   } catch (error) {
     console.error("Error al autenticar:", error);
-    throw error; // Lanza el error para que pueda ser manejado en el componente
+    throw error;
   }
 }
