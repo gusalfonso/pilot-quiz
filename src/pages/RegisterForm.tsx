@@ -3,6 +3,7 @@ import "../styles/RegisterCard.css";
 import { createUser, createUsersTable } from "../services/dbregister";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
+import Card from "../components/Card/Card";
 
 function RegisterForm() {
   const [firstName, setFirstName] = useState("");
@@ -61,14 +62,10 @@ function RegisterForm() {
 
   return (
     <div className="register-card-container">
-      <div className="card">
-        <div className="card-logo">
-          <img src="/src/assets/planeicon.svg" alt="planeicon" />
-        </div>
-        <div className="card-header">
-          <h1>Registrarse</h1>
-          <div>Por favor, completa los detalles para crear una cuenta</div>
-        </div>
+      <Card
+        title="Registrarse"
+        subtitle="Por favor, completa los detalles para crear una cuenta"
+      >
         <form className="register-card-form" onSubmit={handleSubmit}>
           <div className="form-item">
             <input
@@ -140,7 +137,7 @@ function RegisterForm() {
         <div className="register-card-footer">
           ¿Ya tienes una cuenta? <a href="/login">Inicia sesión aquí.</a>
         </div>
-      </div>
+      </Card>
     </div>
   );
 }
