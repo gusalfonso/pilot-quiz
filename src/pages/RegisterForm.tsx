@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/RegisterCard.css";
 import { createUser, createUsersTable } from "../services/dbregister";
 import { toast } from "sonner";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Card from "../components/Card/Card";
 
 function RegisterForm() {
@@ -134,7 +134,7 @@ function RegisterForm() {
           </button>
         </form>
         <div className="register-card-footer">
-          ¿Ya tienes una cuenta? <a href="/login">Inicia sesión aquí.</a>
+          ¿Ya tienes una cuenta? <Link to="/login">Inicia sesión aquí.</Link>
         </div>
       </Card>
     </div>

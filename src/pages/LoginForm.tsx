@@ -3,7 +3,7 @@ import { useAuthStore } from "../store/AuthStore";
 import { authenticateUser } from "../services/dblogin";
 import "../styles/LoginCard.css";
 import { toast } from "sonner";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Card from "../components/Card/Card";
 
 function LoginCard() {
@@ -73,7 +73,7 @@ function LoginCard() {
           </form>
           <div className="login-card-footer">
             ¿No tienes una cuenta?{" "}
-            <a href="/register">Crea una cuenta gratuita.</a>
+            <Link to="/register">Crea una cuenta gratuita.</Link>
           </div>
         </Card>
       </div>
