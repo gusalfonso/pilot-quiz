@@ -1,0 +1,548 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué distancia recorrerá una aeronave en 2 hs 15 min de vuelo manteniendo una velocidad terrestre de 138 nudos?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "313 millas náuticas.",
+      "310 millas náuticas.",
+      "320 millas náuticas."
+    ],
+    "correct": "313 millas náuticas."
+  },
+  {
+    "id": 2,
+    "question": "Durante un tirabuzón hacia la izquierda, ¿qué ala está en pérdida?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Solamente el ala izquierda está en pérdida.",
+      "Ambas alas están en pérdida.",
+      "Ningún ala está en pérdida."
+    ],
+    "correct": "Solamente el ala izquierda está en pérdida."
+  },
+  {
+    "id": 3,
+    "question": "El viento que se desplaza es creado por:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "El efecto que provoca la fuerza de coriolis.",
+      "Movimiento de aire desde áreas de alta presión hacia un área de baja presión.",
+      "Movimiento de aire desde áreas de baja presión hacia un área de alta presión."
+    ],
+    "correct": "Movimiento de aire desde áreas de alta presión hacia un área de baja presión."
+  },
+  {
+    "id": 4,
+    "question": "Durante un prevuelo en clima frío, se debe poner especial atención a las líneas del respiradero del cárter debido a que son susceptibles a obstruirse por:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Congelamiento de aceite proveniente de la carcasa del cigüeñal.",
+      "Hielo proveniente de los vapores del interior del cárter, que se han condensado y congelado en consecuencia.",
+      "Humedad proveniente del aire de fuera que se ha congelado."
+    ],
+    "correct": "Hielo proveniente de los vapores del interior del cárter, que se han condensado y congelado en consecuencia."
+  },
+  {
+    "id": 5,
+    "question": "¿Qué acción deben tomar los pilotos de un planeador y un avión que se encuentran en rumbo de colisión?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Ambos pilotos deberían girar a la derecha.",
+      "El piloto del planeador debería girar por su derecha.",
+      "El piloto del avión debería girar por izquierda."
+    ],
+    "correct": "Ambos pilotos deberían girar a la derecha."
+  },
+  {
+    "id": 6,
+    "question": "El Modelo de James Reason es la representación gráfica de una cadena de errores a través de un modelo que contempla Fallas Latentes, Fallas Activas y las Defensas que deben interponerse a efectos de cortar dicha cadena.",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": ["Falso.", "Verdadero."],
+    "correct": "Verdadero."
+  },
+  {
+    "id": 7,
+    "question": "¿Cuál de las siguientes afirmaciones es correcta con respecto a las fuerzas opuestas que actúan sobre un avión en vuelo nivelado?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "El empuje es mayor que la resistencia al avance y el peso y sustentación son equivalentes.",
+      "El empuje es mayor que la resistencia al avance y la sustentación es mayor que el peso.",
+      "Dichas fuerzas son equivalentes."
+    ],
+    "correct": "El empuje es mayor que la resistencia al avance y el peso y sustentación son equivalentes."
+  },
+  {
+    "id": 8,
+    "question": "Cuando aterriza detrás de una aeronave de gran porte, ¿qué procedimiento debería seguir para evitar la estela turbulenta?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Mantenerse por debajo y a un costado de su pendiente de planeo.",
+      "Mantenerse bien debajo de su pendiente de planeo y aterrizar tocando al menos 600 m detrás de la misma.",
+      "Mantenerse todo el tiempo por encima de su pendiente de planeo hasta tocar en lo posible por delante de donde lo hizo la aeronave precedente."
+    ],
+    "correct": "Mantenerse bien debajo de su pendiente de planeo y aterrizar tocando al menos 600 m detrás de la misma."
+  },
+  {
+    "id": 9,
+    "question": "Con ciertas excepciones, se requiere que el cinturón de seguridad sea utilizado por los pasajeros durante:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "El vuelo con turbulencia.",
+      "Durante todo el vuelo.",
+      "Rodaje, despegue y aterrizaje."
+    ],
+    "correct": "Rodaje, despegue y aterrizaje."
+  },
+  {
+    "id": 10,
+    "question": "La mayoría de las colisiones en el aire ocurren durante:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": ["Días de neblina.", "Días claros.", "Noches nubladas."],
+    "correct": "Días de neblina."
+  },
+  {
+    "id": 11,
+    "question": "El alumno de Piloto Privado puede volar solo:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Cumplidas las primeras 25 horas de vuelo.",
+      "Cumplidas como mínimo 8 horas de vuelo en doble comando.",
+      "Cumplidas como mínimo 30 horas de vuelo en doble comando."
+    ],
+    "correct": "Cumplidas como mínimo 30 horas de vuelo en doble comando."
+  },
+  {
+    "id": 12,
+    "question": "Aplicar aire caliente al carburador:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "No afecta a la mezcla.",
+      "Enriquece la mezcla aire/combustible.",
+      "Empobrece la mezcla aire/combustible."
+    ],
+    "correct": "Enriquece la mezcla aire/combustible."
+  },
+  {
+    "id": 13,
+    "question": "¿Qué factor tendería a aumentar la altitud de densidad en un aeropuerto dado?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Un aumento en la presión barométrica.",
+      "Una disminución en la humedad relativa.",
+      "Un aumento en la temperatura ambiente."
+    ],
+    "correct": "Un aumento en la temperatura ambiente."
+  },
+  {
+    "id": 14,
+    "question": "Es obligatorio que la tripulación de vuelo mantenga el cinturón de seguridad y arnés de hombro colocados durante:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "El vuelo con turbulencia.",
+      "Durante toda la operación de vuelo.",
+      "Despegues y aterrizajes."
+    ],
+    "correct": "Durante toda la operación de vuelo."
+  },
+  {
+    "id": 15,
+    "question": "La obligación de asegurar el buen estado de la aeronave antes de la partida es de:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "El piloto al mando (Comandante).",
+      "La Autoridad Aeronáutica.",
+      "El explotador."
+    ],
+    "correct": "El piloto al mando (Comandante)."
+  },
+  {
+    "id": 16,
+    "question": "La definición de tiempo nocturno es:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "1.5 horas después de la puesta del sol hasta 1.5 horas antes de la salida del sol.",
+      "De puesta del sol a la salida del sol.",
+      "El tiempo entre el final del crepúsculo civil vespertino y el comienzo del crepúsculo civil matutino."
+    ],
+    "correct": "El tiempo entre el final del crepúsculo civil vespertino y el comienzo del crepúsculo civil matutino."
+  },
+  {
+    "id": 17,
+    "question": "En un mensaje, la retroalimentación le permite al emisor:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Comunicarse con el receptor.",
+      "Verificar la correcta recepción del mensaje.",
+      "No es relevante."
+    ],
+    "correct": "Verificar la correcta recepción del mensaje."
+  },
+  {
+    "id": 18,
+    "question": "El descenso de temperatura promedio en altura es de:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "2° C cada 1000 metros.",
+      "2,5° F cada 1000 pies.",
+      "2° C cada 300 metros (1000 pies)."
+    ],
+    "correct": "2° C cada 1000 metros."
+  },
+  {
+    "id": 19,
+    "question": "Si se vuela desde un área de alta presión hacia una de baja presión, el altímetro indicará una altitud:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "La actual altitud sobre el nivel del mar.",
+      "Menor que la altitud actual sobre el nivel del mar.",
+      "Mayor que la altitud actual sobre el nivel del mar."
+    ],
+    "correct": "Mayor que la altitud actual sobre el nivel del mar."
+  },
+  {
+    "id": 20,
+    "question": "El peso (weight) es:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "La fuerza con que la gravedad atrae a los cuerpos verticalmente hacia el centro de la tierra.",
+      "La fuerza con que la gravedad repele a los cuerpos horizontalmente hacia el centro de la tierra.",
+      "La fuerza con que la gravedad atrae a los cuerpos longitudinalmente hacia el centro de la tierra."
+    ],
+    "correct": "La fuerza con que la gravedad atrae a los cuerpos verticalmente hacia el centro de la tierra."
+  },
+  {
+    "id": 21,
+    "question": "En la carta aeronáutica conforme de Lambert, 1 cm medido sobre la misma equivale a:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": ["1 km.", "10 km.", "100 km."],
+    "correct": "10 km."
+  },
+  {
+    "id": 22,
+    "question": "¿A cuántos km/h equivalen 88 nudos?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": ["1176 Km/h.", "163 Km/h.", "103 Km/h."],
+    "correct": "163 Km/h."
+  },
+  {
+    "id": 23,
+    "question": "Según el movimiento y la temperatura de las masas de aire, los frentes se clasifican como:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Masas de aire.",
+      "Fríos - Calientes - Estacionarios - Ocluidos.",
+      "Fríos - Calientes."
+    ],
+    "correct": "Fríos - Calientes - Estacionarios - Ocluidos."
+  },
+  {
+    "id": 24,
+    "question": "¿Qué acción se requiere cuando dos aeronaves de la misma categoría están con rumbos convergentes (no de frente)?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Ambas aeronaves harán viraje por su derecha.",
+      "La aeronave que tenga a la otra a su derecha cederá el paso.",
+      "Se dará paso a la aeronave más veloz."
+    ],
+    "correct": "La aeronave que tenga a la otra a su derecha cederá el paso."
+  },
+  {
+    "id": 25,
+    "question": "La cortante de viento puede ocurrir a cualquier nivel y puede ser detectada por el piloto como un:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Súbito cambio en la velocidad.",
+      "Un cambio en la temperatura.",
+      "Una fluctuación inesperada en el variometro."
+    ],
+    "correct": "Súbito cambio en la velocidad."
+  },
+  {
+    "id": 26,
+    "question": "¿Cuál es la limitación importante de velocidad que no está codificada con colores en el velocímetro?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Velocidad de nunca exceder.",
+      "Velocidad máxima estructural de crucero.",
+      "Velocidad de maniobra."
+    ],
+    "correct": "Velocidad de maniobra."
+  },
+  {
+    "id": 27,
+    "question": "¿Bajo qué condiciones la presión de altitud es igual a la altitud verdadera?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Cuando existen condiciones atmosféricas estándares.",
+      "Cuando la altitud indicada es igual a la altitud de presión.",
+      "Cuando la presión atmosférica es 29,92”."
+    ],
+    "correct": "Cuando existen condiciones atmosféricas estándares."
+  },
+  {
+    "id": 28,
+    "question": "Excepto cuando sea necesario para el despegue o aterrizaje, ¿cuál es la altitud mínima de seguridad requerida para un piloto que vuela sobre áreas congestionadas?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Una altitud de 300 metros sobre el obstáculo más alto dentro de un radio horizontal de 600 metros.",
+      "1000 pies sobre cualquier persona.",
+      "Una altitud de 500 pies sobre el punto más alto en un radio de 300 metros de la aeronave."
+    ],
+    "correct": "Una altitud de 1000 pies sobre cualquier persona."
+  },
+  {
+    "id": 29,
+    "question": "La detonación puede producirse por:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Temperaturas bajas del motor.",
+      "El uso de combustible de menor grado que el recomendado.",
+      "Una mezcla de combustible rica."
+    ],
+    "correct": "El uso de combustible de menor grado que el recomendado."
+  },
+  {
+    "id": 30,
+    "question": "El término 'ángulo de ataque' es definido como el ángulo:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Entre el ángulo de ascenso del avión y el horizonte.",
+      "Entre la cuerda del ala y el viento relativo.",
+      "Formado por el eje longitudinal del avión y la cuerda del ala."
+    ],
+    "correct": "Entre la cuerda del ala y el viento relativo."
+  },
+  {
+    "id": 31,
+    "question": "¿Cuál de las siguientes causas es la más probable que produzca hiperventilación?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Un índice extremadamente lento de respiración y oxígeno insuficiente.",
+      "Tensión emocional, ansiedad o miedo.",
+      "El consumo excesivo de alcohol."
+    ],
+    "correct": "Tensión emocional, ansiedad o miedo."
+  },
+  {
+    "id": 32,
+    "question": "¿Cuál es el mínimo número de satélites observables en cualquier parte de la tierra?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": ["5.", "6.", "4."],
+    "correct": "4."
+  },
+  {
+    "id": 33,
+    "question": "¿Cómo se debería precalentar un avión durante operaciones de clima frío?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "No se debe precalentar el área de cabina con calentadores portátiles.",
+      "Se debe inyectar aire caliente directamente al motor a través de la toma de admisión.",
+      "Se debe precalentar el área de cabina así como el motor."
+    ],
+    "correct": "Se debe precalentar el área de cabina así como el motor."
+  },
+  {
+    "id": 34,
+    "question": "¿Cuál es el antídoto cuando un piloto tiene una actitud riesgosa, como 'impulsividad'?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Me podría suceder a mí.",
+      "Hazlo rápido para terminar con eso.",
+      "No tan rápido, piensa primero."
+    ],
+    "correct": "No tan rápido, piensa primero."
+  },
+  {
+    "id": 35,
+    "question": "Altitud es:",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "La distancia horizontal entre un nivel, punto u objeto considerado como punto y el nivel medio del mar (MSL) y diferentes términos se identifican según el nivel de referencia usado.",
+      "La distancia vertical entre un nivel, punto u objeto considerado como punto y el nivel medio del mar (MSL) y diferentes términos se identifican según el nivel de referencia usado.",
+      "Velocidad de crucero la distancia vertical entre un nivel, punto u objeto considerado como punto y el nivel de vuelo medio del mar (MVSL)."
+    ],
+    "correct": "La distancia vertical entre un nivel, punto u objeto considerado como punto y el nivel medio del mar (MSL) y diferentes términos se identifican según el nivel de referencia usado."
+  },
+  {
+    "id": 36,
+    "question": "¿Cuánto tiempo un Piloto Privado puede permanecer sin actividad de vuelo, sin requerir ser rehabilitado por un Instructor de Vuelo?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": ["Hasta 30 días.", "Hasta 180 días.", "Hasta 90 días."],
+    "correct": "Hasta 90 días."
+  },
+  {
+    "id": 37,
+    "question": "¿En qué condición meteorológica es probable hablar de una inversión de temperatura?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Un incremento de la temperatura a medida que aumenta la altitud.",
+      "Con nubes de gran desarrollo vertical sobre una altura de inversión.",
+      "Buena visibilidad en las capas bajas de la atmósfera y pobre visibilidad sobre la zona de inversión."
+    ],
+    "correct": "Un incremento de la temperatura a medida que aumenta la altitud."
+  },
+  {
+    "id": 38,
+    "question": "¿Qué condiciones pueden causar que el altímetro indique una altitud menor que la verdadera?",
+    "category": "",
+    "category2": "",
+    "source": "",
+    "creator": "",
+    "image": "",
+    "answers": [
+      "Una presión atmosférica menor que la estándar.",
+      "Una temperatura mayor que la estándar.",
+      "Una temperatura menor que la estándar."
+    ],
+    "correct": "Una presión atmosférica menor que la estándar."
+  }
+]
